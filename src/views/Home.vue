@@ -3,7 +3,7 @@
   <div class="topnavAndBanner">
     <Topnav />
     <div class="banner">
-      <h1>轱辘UI</h1>
+      <h1>星UI</h1>
       <h2>一个面向学习者的 UI 框架</h2>
       <p class="actions">
         <a href="https://github.com">GitHub</a>
@@ -15,21 +15,21 @@
     <ul>
       <li>
         <svg>
-          <use xlink:href="#icon-vue"></use>
+          <use xlink:href="#icon-Vue"></use>
         </svg>
         <h3>基于 Vue 3</h3>
         <p>骄傲地使用了 Vue 3 Composition API</p>
       </li>
       <li>
         <svg>
-          <use xlink:href="#icon-ts"></use>
+          <use xlink:href="#icon-typescript"></use>
         </svg>
         <h3>基于 TypeScript </h3>
         <p>源代码采用 TypeScript 书写</p>
       </li>
       <li>
         <svg>
-          <use xlink:href="#icon-light"></use>
+          <use xlink:href="#icon-dianzan"></use>
         </svg>
         <h3>代码易读</h3>
         <p>每个组件的源代码都极其简洁</p>
