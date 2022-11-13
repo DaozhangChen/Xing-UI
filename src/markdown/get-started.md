@@ -20,7 +20,7 @@ import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "xing-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "gulu-ui-1"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "xing-ui"
 export default {
   components: {Button}
 }

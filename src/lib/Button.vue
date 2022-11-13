@@ -1,6 +1,6 @@
 <template>
-  <button class="gulu-button" :class="classes" :disabled="disabled" @click="$emit('click', $event)">
-    <span v-if="loading" class="gulu-loadingIndicator"></span>
+  <button class="xing-button" :class="classes" :disabled="disabled" @click="$emit('click', $event)">
+    <span v-if="loading" class="xing-loadingIndicator"></span>
     <slot />
   </button>
 </template>
@@ -20,9 +20,9 @@ defineEmits<{
 }>()
 const classes = computed(() => {
   return {
-    [`gulu-theme-${theme}`]: theme,
-    [`gulu-size-${size}`]: size,
-    [`gulu-level-${level}`]: level,
+    [`xing-theme-${theme}`]: theme,
+    [`xing-size-${size}`]: size,
+    [`xing-level-${level}`]: level,
   };
 });
 </script>
@@ -35,7 +35,7 @@ $radius: 4px;
 $red: red;
 $grey: grey;
 
-.gulu-button {
+.xing-button {
   box-sizing: border-box;
   height: $h;
   padding: 0 12px;
@@ -69,7 +69,7 @@ $grey: grey;
     border: 0;
   }
 
-  &.gulu-theme-link {
+  &.xing-theme-link {
     border-color: transparent;
     box-shadow: none;
     color: $blue;
@@ -80,7 +80,7 @@ $grey: grey;
     }
   }
 
-  &.gulu-theme-text {
+  &.xing-theme-text {
     border-color: transparent;
     box-shadow: none;
     color: inherit;
@@ -91,20 +91,20 @@ $grey: grey;
     }
   }
 
-  &.gulu-size-big {
+  &.xing-size-big {
     font-size: 24px;
     height: 48px;
     padding: 0 16px;
   }
 
-  &.gulu-size-small {
+  &.xing-size-small {
     font-size: 12px;
     height: 20px;
     padding: 0 4px;
   }
 
-  &.gulu-theme-button {
-    &.gulu-level-main {
+  &.xing-theme-button {
+    &.xing-level-main {
       background: $blue;
       color: white;
       border-color: $blue;
@@ -116,7 +116,7 @@ $grey: grey;
       }
     }
 
-    &.gulu-level-danger {
+    &.xing-level-danger {
       background: $red;
       border-color: $red;
       color: white;
@@ -129,8 +129,8 @@ $grey: grey;
     }
   }
 
-  &.gulu-theme-link {
-    &.gulu-level-danger {
+  &.xing-theme-link {
+    &.xing-level-danger {
       color: $red;
 
       &:hover,
@@ -140,8 +140,8 @@ $grey: grey;
     }
   }
 
-  &.gulu-theme-text {
-    &.gulu-level-main {
+  &.xing-theme-text {
+    &.xing-level-main {
       color: $blue;
 
       &:hover,
@@ -150,7 +150,7 @@ $grey: grey;
       }
     }
 
-    &.gulu-level-danger {
+    &.xing-level-danger {
       color: $red;
 
       &:hover,
@@ -160,7 +160,7 @@ $grey: grey;
     }
   }
 
-  &.gulu-theme-button {
+  &.xing-theme-button {
     &[disabled] {
       cursor: not-allowed;
       color: $grey;
@@ -171,15 +171,15 @@ $grey: grey;
     }
   }
 
-  &.gulu-theme-link,
-  &.gulu-theme-text {
+  &.xing-theme-link,
+  &.xing-theme-text {
     &[disabled] {
       cursor: not-allowed;
       color: $grey;
     }
   }
 
-  >.gulu-loadingIndicator {
+  >.xing-loadingIndicator {
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -188,11 +188,11 @@ $grey: grey;
     border-color: $blue $blue $blue transparent;
     border-style: solid;
     border-width: 2px;
-    animation: gulu-spin 1s infinite linear;
+    animation: xing-spin 1s infinite linear;
   }
 }
 
-@keyframes gulu-spin {
+@keyframes xing-spin {
   0% {
     transform: rotate(0deg)
   }
