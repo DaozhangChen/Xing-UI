@@ -30,8 +30,8 @@ export const openDialog = (options: Options) => {
           ok, cancel
         },
         {
-          title,
-          content,
+          title:()=>title,
+          content:()=>content,
         }
       );
     },
