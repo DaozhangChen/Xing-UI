@@ -50,10 +50,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$border-color: #d9d9d9;
+$border-color: black;
 
 .demo {
   border: 1px solid $border-color;
+  border-radius: 10px;
   margin: 16px 0 32px;
 
   >h2 {
@@ -68,7 +69,6 @@ $border-color: #d9d9d9;
 
   &-actions {
     padding: 8px 16px;
-    border-top: 1px dashed $border-color;
   }
 
   &-code {

@@ -43,6 +43,7 @@ export default {
 <style lang="scss" scoped>
 $color: #007974;
 
+
 .topnav {
   color: $color;
   display: flex;
@@ -54,6 +55,7 @@ $color: #007974;
   z-index: 20;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 3px 5px #3d82ab;
 
   >.logo {
     max-width: 6em;

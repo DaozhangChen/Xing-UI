@@ -73,6 +73,9 @@ $aside-index : 10;
     flex-grow: 1;
     padding-top: 60px;
     padding-left: 156px;
+    h2{
+      font-weight: bold;
+    }
 
     @media (max-width: 500px) {
       padding-left: 0;
@@ -85,6 +88,8 @@ $aside-index : 10;
 
   >aside {
     flex-shrink: 0;
+    background: white;
+
   }
 
   >main {
@@ -95,13 +100,12 @@ $aside-index : 10;
 }
 
 aside {
-  background: lightblue;
   width: 150px;
   padding: 16px 0;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 70px;
+  padding-top: 80px;
   height: 100%;
   z-index: $aside-index;
 
@@ -120,6 +124,7 @@ aside {
 
       .router-link-active {
         background: white;
+        border-right: 4px solid black;
       }
     }
   }
